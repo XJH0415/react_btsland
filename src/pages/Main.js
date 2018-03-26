@@ -27,7 +27,6 @@ class Main extends React.Component{
         return (
             <View>
                 <Header rightType={'none'} title={title} leftType={'share'}/>
-                <LimitOrderItem/>
                 {/*<WebView*/}
                 {/*source={{uri:'https://changjinglu.info/'}}*/}
                 {/*style={styles.webView}*/}

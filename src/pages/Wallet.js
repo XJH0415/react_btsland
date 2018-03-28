@@ -11,6 +11,7 @@ import Application from "../Application";
 import DataRobot from "../service/DataRobot";
 import sha256 from 'js-sha256';
 import Photo from "../components/Photo";
+import LimitOrders from "./LimitOrders";
 class Wallet extends React.Component{
     static navigationOptions = {
         title: '钱包',
@@ -59,7 +60,9 @@ class Wallet extends React.Component{
                     leftTextDesc:null,
                     rightText:undefined,
                     rightImage:undefined,
-                    onPress:undefined
+                    onPress:function(){
+                        navigate('LimitOrders', { name: 'LimitOrders' })
+                    }
                 },
                 {
                     leftImage:undefined,

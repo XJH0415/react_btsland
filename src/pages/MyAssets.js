@@ -11,6 +11,7 @@ import DataPool from "../service/DataPool";
 import DataRobot from "../service/DataRobot";
 import Tab from "../components/Tab";
 import AccountLimitOrders from "../components/AccountLimitOrders";
+import AccountHistorys from "../components/AccountHistorys";
 export default class MyAssets extends React.Component{
     state={
         circaCNY:0,
@@ -20,7 +21,7 @@ export default class MyAssets extends React.Component{
      * 渲染前
      */
     componentWillMount(){
-
+        this.AccountHistorys=<AccountHistorys accountName={DataPool.fullAccount.get(Application.account)?DataPool.fullAccount.get(Application.account).account.id:null} />
     }
     AccountAssets;
     AccountLimitOrders;
@@ -39,13 +40,10 @@ export default class MyAssets extends React.Component{
                 </View>
                 <Tab onPress={(index)=>{this.switchTab(index)}}/>
                 {
-                    this.state.index===0|| this.state.index===1 ?
-                        this.state.index===0?
-                            <AccountAssets ref={(instance)=>{this.AccountAssets=instance}} fullAccount={DataPool.MyFullAccount.get(Application.account)} />
-                            :
-                            <AccountLimitOrders ref={(instance)=>{this.AccountLimitOrders=instance}} limit_orders={DataPool.MyFullAccount.get(Application.account)?DataPool.MyFullAccount.get(Application.account).limit_orders:{}} />
+                    this.state.index===0?
+                        <AccountAssets ref={(instance)=>{this.AccountAssets=instance}} fullAccount={DataPool.MyFullAccount.get(Application.account)} />
                         :
-                        null
+                        <AccountLimitOrders ref={(instance)=>{this.AccountLimitOrders=instance}} limit_orders={DataPool.MyFullAccount.get(Application.account)?DataPool.MyFullAccount.get(Application.account).limit_orders:{}} />
                 }
 
             </View>

@@ -32,11 +32,6 @@ export default class Tab extends React.Component{
                         <Text style={styles.text}>委单</Text>
                     </View>
                 </TouchableWithoutFeedback>
-                <TouchableWithoutFeedback onPress={()=>{this.setState({index:2,});this.props.onPress(2)}}>
-                    <View style={[styles.tab,this.state.index===2?styles.tabTouch:{}]}>
-                        <Text style={styles.text}>记录</Text>
-                    </View>
-                </TouchableWithoutFeedback>
             </View>
         )
     }

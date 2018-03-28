@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* BtslandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BtslandTests.m */; };
+		0AE886CFCCF30C6CCC62E1F4 /* libPods-Btsland-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4047B6039560C698AE87ED /* libPods-Btsland-tvOS.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -34,10 +35,60 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* BtslandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BtslandTests.m */; };
+		4382EE5374AC761BFC2E4CE5 /* Pods_BtslandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEA96310FB5BF8B62FC6AAB /* Pods_BtslandTests.framework */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		785430AB2064DBD300975999 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 785430642064D42900975999 /* libART.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9AD4BB4E206A44F400B25EFF /* RNCombinedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAEC206A44F400B25EFF /* RNCombinedChartView.swift */; };
+		9AD4BB4F206A44F400B25EFF /* RNCombinedChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAED206A44F400B25EFF /* RNCombinedChartManager.swift */; };
+		9AD4BB50206A44F400B25EFF /* RNCombinedChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAEE206A44F400B25EFF /* RNCombinedChartManagerBridge.m */; };
+		9AD4BB51206A44F400B25EFF /* CombinedDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAEF206A44F400B25EFF /* CombinedDataExtract.swift */; };
+		9AD4BB52206A44F400B25EFF /* RNYAxisChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF0206A44F400B25EFF /* RNYAxisChartViewBase.swift */; };
+		9AD4BB53206A44F400B25EFF /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF1206A44F400B25EFF /* BalloonMarker.swift */; };
+		9AD4BB54206A44F400B25EFF /* RNBarLineChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF2206A44F400B25EFF /* RNBarLineChartViewBase.swift */; };
+		9AD4BB55206A44F400B25EFF /* ChartDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF4206A44F400B25EFF /* ChartDateFormatter.swift */; };
+		9AD4BB56206A44F400B25EFF /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF5206A44F400B25EFF /* LargeValueFormatter.swift */; };
+		9AD4BB57206A44F400B25EFF /* EntryToDictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF7206A44F400B25EFF /* EntryToDictionaryUtils.swift */; };
+		9AD4BB58206A44F400B25EFF /* ChartDataSetConfigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF8206A44F400B25EFF /* ChartDataSetConfigUtils.swift */; };
+		9AD4BB59206A44F400B25EFF /* BridgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAF9206A44F400B25EFF /* BridgeUtils.swift */; };
+		9AD4BB5A206A44F400B25EFF /* RNBubbleChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAFC206A44F400B25EFF /* RNBubbleChartManager.swift */; };
+		9AD4BB5B206A44F400B25EFF /* RNBubbleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAFD206A44F400B25EFF /* RNBubbleChartView.swift */; };
+		9AD4BB5C206A44F400B25EFF /* BubbleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAFE206A44F400B25EFF /* BubbleDataExtract.swift */; };
+		9AD4BB5D206A44F400B25EFF /* RNBubbleChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BAFF206A44F400B25EFF /* RNBubbleChartManagerBridge.m */; };
+		9AD4BB5E206A44F400B25EFF /* RNBarLineChartBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB00206A44F400B25EFF /* RNBarLineChartBaseManager.swift */; };
+		9AD4BB5F206A44F400B25EFF /* RNPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB03206A44F400B25EFF /* RNPieChartView.swift */; };
+		9AD4BB60206A44F400B25EFF /* RNPieChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB04206A44F400B25EFF /* RNPieChartManagerBridge.m */; };
+		9AD4BB61206A44F400B25EFF /* PieDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB05206A44F400B25EFF /* PieDataExtract.swift */; };
+		9AD4BB62206A44F400B25EFF /* RNPieChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB06206A44F400B25EFF /* RNPieChartManager.swift */; };
+		9AD4BB63206A44F400B25EFF /* RNScatterChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB08206A44F400B25EFF /* RNScatterChartManager.swift */; };
+		9AD4BB64206A44F400B25EFF /* RNScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB09206A44F400B25EFF /* RNScatterChartView.swift */; };
+		9AD4BB65206A44F400B25EFF /* RNScatterChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB0A206A44F400B25EFF /* RNScatterChartManagerBridge.m */; };
+		9AD4BB66206A44F400B25EFF /* ScatterDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB0B206A44F400B25EFF /* ScatterDataExtract.swift */; };
+		9AD4BB67206A44F400B25EFF /* RNLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB0D206A44F400B25EFF /* RNLineChartView.swift */; };
+		9AD4BB68206A44F400B25EFF /* RNLineChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB0E206A44F400B25EFF /* RNLineChartManager.swift */; };
+		9AD4BB69206A44F400B25EFF /* RNLineChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB0F206A44F400B25EFF /* RNLineChartManagerBridge.m */; };
+		9AD4BB6A206A44F400B25EFF /* LineDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB10206A44F400B25EFF /* LineDataExtract.swift */; };
+		9AD4BB6B206A44F400B25EFF /* CandleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB12206A44F400B25EFF /* CandleDataExtract.swift */; };
+		9AD4BB6C206A44F400B25EFF /* RNCandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB13206A44F400B25EFF /* RNCandleStickChartView.swift */; };
+		9AD4BB6D206A44F400B25EFF /* RNCandleStickChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB14206A44F400B25EFF /* RNCandleStickChartManager.swift */; };
+		9AD4BB6E206A44F400B25EFF /* RNCandleStickChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB15206A44F400B25EFF /* RNCandleStickChartManagerBridge.m */; };
+		9AD4BB6F206A44F400B25EFF /* RNBarChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB18206A44F400B25EFF /* RNBarChartViewBase.swift */; };
+		9AD4BB70206A44F400B25EFF /* BarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB19206A44F400B25EFF /* BarDataExtract.swift */; };
+		9AD4BB71206A44F400B25EFF /* RNHorizontalBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1A206A44F400B25EFF /* RNHorizontalBarChartManager.swift */; };
+		9AD4BB72206A44F400B25EFF /* RNBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1B206A44F400B25EFF /* RNBarChartManager.swift */; };
+		9AD4BB73206A44F400B25EFF /* RNBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1C206A44F400B25EFF /* RNBarChartManagerBridge.m */; };
+		9AD4BB74206A44F400B25EFF /* RNBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1D206A44F400B25EFF /* RNBarChartView.swift */; };
+		9AD4BB75206A44F400B25EFF /* RNHorizontalBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1E206A44F400B25EFF /* RNHorizontalBarChartView.swift */; };
+		9AD4BB76206A44F400B25EFF /* RNHorizontalBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB1F206A44F400B25EFF /* RNHorizontalBarChartManagerBridge.m */; };
+		9AD4BB77206A44F400B25EFF /* RadarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB21206A44F400B25EFF /* RadarDataExtract.swift */; };
+		9AD4BB78206A44F400B25EFF /* RNRadarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB22206A44F400B25EFF /* RNRadarChartManagerBridge.m */; };
+		9AD4BB79206A44F400B25EFF /* RNRadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB23206A44F400B25EFF /* RNRadarChartView.swift */; };
+		9AD4BB7A206A44F400B25EFF /* RNRadarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB24206A44F400B25EFF /* RNRadarChartManager.swift */; };
+		9AD4BB7B206A44F400B25EFF /* RNChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB25206A44F400B25EFF /* RNChartViewBase.swift */; };
+		9AD4BB7C206A44F400B25EFF /* DataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4BB26206A44F400B25EFF /* DataExtract.swift */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		BFA3B41B233BA8F1987ACDD7 /* libPods-Btsland-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E84A581B38680F5A15FD1EF /* libPods-Btsland-tvOSTests.a */; };
+		DAF80A42362026EED88E02B3 /* Pods_Btsland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E679B77B1492542D93078A /* Pods_Btsland.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,6 +391,9 @@
 		00E356EE1AD99517003FC87E /* BtslandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BtslandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BtslandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtslandTests.m; sourceTree = "<group>"; };
+		00F4766862AED841850B791B /* Pods-Btsland.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland.release.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland/Pods-Btsland.release.xcconfig"; sourceTree = "<group>"; };
+		04A911BC6771ECE9025E5C84 /* Pods-Btsland-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland-tvOS/Pods-Btsland-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		0C4047B6039560C698AE87ED /* libPods-Btsland-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Btsland-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Btsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Btsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -350,14 +404,74 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Btsland/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Btsland/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1AD426B5B1E1EE19DECBB4A0 /* Pods-BtslandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BtslandTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BtslandTests/Pods-BtslandTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Btsland-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Btsland-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Btsland-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Btsland-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5059D9D3C842881AA02F7742 /* Pods-BtslandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BtslandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BtslandTests/Pods-BtslandTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C17042C742ACA98CFC3F024 /* Pods-Btsland.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland/Pods-Btsland.debug.xcconfig"; sourceTree = "<group>"; };
+		5E84A581B38680F5A15FD1EF /* libPods-Btsland-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Btsland-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		67E679B77B1492542D93078A /* Pods_Btsland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Btsland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		732EB2D4C95A49C550A3CD08 /* Pods-Btsland-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland-tvOS/Pods-Btsland-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7854305E2064D42900975999 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9AD4BAEC206A44F400B25EFF /* RNCombinedChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartView.swift; sourceTree = "<group>"; };
+		9AD4BAED206A44F400B25EFF /* RNCombinedChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartManager.swift; sourceTree = "<group>"; };
+		9AD4BAEE206A44F400B25EFF /* RNCombinedChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCombinedChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BAEF206A44F400B25EFF /* CombinedDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BAF0206A44F400B25EFF /* RNYAxisChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNYAxisChartViewBase.swift; sourceTree = "<group>"; };
+		9AD4BAF1206A44F400B25EFF /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		9AD4BAF2206A44F400B25EFF /* RNBarLineChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarLineChartViewBase.swift; sourceTree = "<group>"; };
+		9AD4BAF4206A44F400B25EFF /* ChartDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDateFormatter.swift; sourceTree = "<group>"; };
+		9AD4BAF5206A44F400B25EFF /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeValueFormatter.swift; sourceTree = "<group>"; };
+		9AD4BAF7206A44F400B25EFF /* EntryToDictionaryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryToDictionaryUtils.swift; sourceTree = "<group>"; };
+		9AD4BAF8206A44F400B25EFF /* ChartDataSetConfigUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataSetConfigUtils.swift; sourceTree = "<group>"; };
+		9AD4BAF9206A44F400B25EFF /* BridgeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeUtils.swift; sourceTree = "<group>"; };
+		9AD4BAFA206A44F400B25EFF /* RNChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNChartManagerBridge.h; sourceTree = "<group>"; };
+		9AD4BAFC206A44F400B25EFF /* RNBubbleChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartManager.swift; sourceTree = "<group>"; };
+		9AD4BAFD206A44F400B25EFF /* RNBubbleChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartView.swift; sourceTree = "<group>"; };
+		9AD4BAFE206A44F400B25EFF /* BubbleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BAFF206A44F400B25EFF /* RNBubbleChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBubbleChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB00206A44F400B25EFF /* RNBarLineChartBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarLineChartBaseManager.swift; sourceTree = "<group>"; };
+		9AD4BB01206A44F400B25EFF /* RNYAxisChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYAxisChartManagerBridge.h; sourceTree = "<group>"; };
+		9AD4BB03206A44F400B25EFF /* RNPieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartView.swift; sourceTree = "<group>"; };
+		9AD4BB04206A44F400B25EFF /* RNPieChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPieChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB05206A44F400B25EFF /* PieDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB06206A44F400B25EFF /* RNPieChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB08206A44F400B25EFF /* RNScatterChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB09206A44F400B25EFF /* RNScatterChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartView.swift; sourceTree = "<group>"; };
+		9AD4BB0A206A44F400B25EFF /* RNScatterChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNScatterChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB0B206A44F400B25EFF /* ScatterDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB0D206A44F400B25EFF /* RNLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartView.swift; sourceTree = "<group>"; };
+		9AD4BB0E206A44F400B25EFF /* RNLineChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB0F206A44F400B25EFF /* RNLineChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLineChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB10206A44F400B25EFF /* LineDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB12206A44F400B25EFF /* CandleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB13206A44F400B25EFF /* RNCandleStickChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartView.swift; sourceTree = "<group>"; };
+		9AD4BB14206A44F400B25EFF /* RNCandleStickChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB15206A44F400B25EFF /* RNCandleStickChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCandleStickChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB16206A44F400B25EFF /* RNBarLineChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBarLineChartManagerBridge.h; sourceTree = "<group>"; };
+		9AD4BB18206A44F400B25EFF /* RNBarChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartViewBase.swift; sourceTree = "<group>"; };
+		9AD4BB19206A44F400B25EFF /* BarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB1A206A44F400B25EFF /* RNHorizontalBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB1B206A44F400B25EFF /* RNBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB1C206A44F400B25EFF /* RNBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBarChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB1D206A44F400B25EFF /* RNBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartView.swift; sourceTree = "<group>"; };
+		9AD4BB1E206A44F400B25EFF /* RNHorizontalBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartView.swift; sourceTree = "<group>"; };
+		9AD4BB1F206A44F400B25EFF /* RNHorizontalBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHorizontalBarChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB21206A44F400B25EFF /* RadarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarDataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB22206A44F400B25EFF /* RNRadarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRadarChartManagerBridge.m; sourceTree = "<group>"; };
+		9AD4BB23206A44F400B25EFF /* RNRadarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartView.swift; sourceTree = "<group>"; };
+		9AD4BB24206A44F400B25EFF /* RNRadarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartManager.swift; sourceTree = "<group>"; };
+		9AD4BB25206A44F400B25EFF /* RNChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNChartViewBase.swift; sourceTree = "<group>"; };
+		9AD4BB26206A44F400B25EFF /* DataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtract.swift; sourceTree = "<group>"; };
+		9AD4BB7D206A45B400B25EFF /* Btsland-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Btsland-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D2398BF9CFBFB4C3B38451E /* Pods-Btsland-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland-tvOSTests/Pods-Btsland-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		B786D2AD42B47D07AB272FB1 /* Pods-Btsland-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Btsland-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Btsland-tvOSTests/Pods-Btsland-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBEA96310FB5BF8B62FC6AAB /* Pods_BtslandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BtslandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				4382EE5374AC761BFC2E4CE5 /* Pods_BtslandTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +502,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				DAF80A42362026EED88E02B3 /* Pods_Btsland.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +518,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				0AE886CFCCF30C6CCC62E1F4 /* libPods-Btsland-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,12 +526,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA3B41B233BA8F1987ACDD7 /* libPods-Btsland-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001B1F46E58B3AC1DB3C57D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C17042C742ACA98CFC3F024 /* Pods-Btsland.debug.xcconfig */,
+				00F4766862AED841850B791B /* Pods-Btsland.release.xcconfig */,
+				732EB2D4C95A49C550A3CD08 /* Pods-Btsland-tvOS.debug.xcconfig */,
+				04A911BC6771ECE9025E5C84 /* Pods-Btsland-tvOS.release.xcconfig */,
+				B786D2AD42B47D07AB272FB1 /* Pods-Btsland-tvOSTests.debug.xcconfig */,
+				9D2398BF9CFBFB4C3B38451E /* Pods-Btsland-tvOSTests.release.xcconfig */,
+				1AD426B5B1E1EE19DECBB4A0 /* Pods-BtslandTests.debug.xcconfig */,
+				5059D9D3C842881AA02F7742 /* Pods-BtslandTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		00C302A81ABCB8CE00DB3ED1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +630,8 @@
 		13B07FAE1A68108700A75B9A /* Btsland */ = {
 			isa = PBXGroup;
 			children = (
+				9AD4BB7D206A45B400B25EFF /* Btsland-Bridging-Header.h */,
+				9AD4BAEA206A44F400B25EFF /* ReactNativeCharts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -535,6 +670,10 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				67E679B77B1492542D93078A /* Pods_Btsland.framework */,
+				0C4047B6039560C698AE87ED /* libPods-Btsland-tvOS.a */,
+				5E84A581B38680F5A15FD1EF /* libPods-Btsland-tvOSTests.a */,
+				BBEA96310FB5BF8B62FC6AAB /* Pods_BtslandTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -603,6 +742,7 @@
 				00E356EF1AD99517003FC87E /* BtslandTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				001B1F46E58B3AC1DB3C57D4 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -618,6 +758,144 @@
 				2D02E4901E0B4A5D006451C7 /* Btsland-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD4BAEA206A44F400B25EFF /* ReactNativeCharts */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BAEB206A44F400B25EFF /* combine */,
+				9AD4BAF0206A44F400B25EFF /* RNYAxisChartViewBase.swift */,
+				9AD4BAF1206A44F400B25EFF /* BalloonMarker.swift */,
+				9AD4BAF2206A44F400B25EFF /* RNBarLineChartViewBase.swift */,
+				9AD4BAF3206A44F400B25EFF /* formatters */,
+				9AD4BAF6206A44F400B25EFF /* utils */,
+				9AD4BAFA206A44F400B25EFF /* RNChartManagerBridge.h */,
+				9AD4BAFB206A44F400B25EFF /* bubble */,
+				9AD4BB00206A44F400B25EFF /* RNBarLineChartBaseManager.swift */,
+				9AD4BB01206A44F400B25EFF /* RNYAxisChartManagerBridge.h */,
+				9AD4BB02206A44F400B25EFF /* pie */,
+				9AD4BB07206A44F400B25EFF /* scatter */,
+				9AD4BB0C206A44F400B25EFF /* line */,
+				9AD4BB11206A44F400B25EFF /* candlestick */,
+				9AD4BB16206A44F400B25EFF /* RNBarLineChartManagerBridge.h */,
+				9AD4BB17206A44F400B25EFF /* bar */,
+				9AD4BB20206A44F400B25EFF /* radar */,
+				9AD4BB25206A44F400B25EFF /* RNChartViewBase.swift */,
+				9AD4BB26206A44F400B25EFF /* DataExtract.swift */,
+			);
+			name = ReactNativeCharts;
+			path = "../node_modules/react-native-charts-wrapper/ios/ReactNativeCharts";
+			sourceTree = "<group>";
+		};
+		9AD4BAEB206A44F400B25EFF /* combine */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BAEC206A44F400B25EFF /* RNCombinedChartView.swift */,
+				9AD4BAED206A44F400B25EFF /* RNCombinedChartManager.swift */,
+				9AD4BAEE206A44F400B25EFF /* RNCombinedChartManagerBridge.m */,
+				9AD4BAEF206A44F400B25EFF /* CombinedDataExtract.swift */,
+			);
+			path = combine;
+			sourceTree = "<group>";
+		};
+		9AD4BAF3206A44F400B25EFF /* formatters */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BAF4206A44F400B25EFF /* ChartDateFormatter.swift */,
+				9AD4BAF5206A44F400B25EFF /* LargeValueFormatter.swift */,
+			);
+			path = formatters;
+			sourceTree = "<group>";
+		};
+		9AD4BAF6206A44F400B25EFF /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BAF7206A44F400B25EFF /* EntryToDictionaryUtils.swift */,
+				9AD4BAF8206A44F400B25EFF /* ChartDataSetConfigUtils.swift */,
+				9AD4BAF9206A44F400B25EFF /* BridgeUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		9AD4BAFB206A44F400B25EFF /* bubble */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BAFC206A44F400B25EFF /* RNBubbleChartManager.swift */,
+				9AD4BAFD206A44F400B25EFF /* RNBubbleChartView.swift */,
+				9AD4BAFE206A44F400B25EFF /* BubbleDataExtract.swift */,
+				9AD4BAFF206A44F400B25EFF /* RNBubbleChartManagerBridge.m */,
+			);
+			path = bubble;
+			sourceTree = "<group>";
+		};
+		9AD4BB02206A44F400B25EFF /* pie */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB03206A44F400B25EFF /* RNPieChartView.swift */,
+				9AD4BB04206A44F400B25EFF /* RNPieChartManagerBridge.m */,
+				9AD4BB05206A44F400B25EFF /* PieDataExtract.swift */,
+				9AD4BB06206A44F400B25EFF /* RNPieChartManager.swift */,
+			);
+			path = pie;
+			sourceTree = "<group>";
+		};
+		9AD4BB07206A44F400B25EFF /* scatter */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB08206A44F400B25EFF /* RNScatterChartManager.swift */,
+				9AD4BB09206A44F400B25EFF /* RNScatterChartView.swift */,
+				9AD4BB0A206A44F400B25EFF /* RNScatterChartManagerBridge.m */,
+				9AD4BB0B206A44F400B25EFF /* ScatterDataExtract.swift */,
+			);
+			path = scatter;
+			sourceTree = "<group>";
+		};
+		9AD4BB0C206A44F400B25EFF /* line */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB0D206A44F400B25EFF /* RNLineChartView.swift */,
+				9AD4BB0E206A44F400B25EFF /* RNLineChartManager.swift */,
+				9AD4BB0F206A44F400B25EFF /* RNLineChartManagerBridge.m */,
+				9AD4BB10206A44F400B25EFF /* LineDataExtract.swift */,
+			);
+			path = line;
+			sourceTree = "<group>";
+		};
+		9AD4BB11206A44F400B25EFF /* candlestick */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB12206A44F400B25EFF /* CandleDataExtract.swift */,
+				9AD4BB13206A44F400B25EFF /* RNCandleStickChartView.swift */,
+				9AD4BB14206A44F400B25EFF /* RNCandleStickChartManager.swift */,
+				9AD4BB15206A44F400B25EFF /* RNCandleStickChartManagerBridge.m */,
+			);
+			path = candlestick;
+			sourceTree = "<group>";
+		};
+		9AD4BB17206A44F400B25EFF /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB18206A44F400B25EFF /* RNBarChartViewBase.swift */,
+				9AD4BB19206A44F400B25EFF /* BarDataExtract.swift */,
+				9AD4BB1A206A44F400B25EFF /* RNHorizontalBarChartManager.swift */,
+				9AD4BB1B206A44F400B25EFF /* RNBarChartManager.swift */,
+				9AD4BB1C206A44F400B25EFF /* RNBarChartManagerBridge.m */,
+				9AD4BB1D206A44F400B25EFF /* RNBarChartView.swift */,
+				9AD4BB1E206A44F400B25EFF /* RNHorizontalBarChartView.swift */,
+				9AD4BB1F206A44F400B25EFF /* RNHorizontalBarChartManagerBridge.m */,
+			);
+			path = bar;
+			sourceTree = "<group>";
+		};
+		9AD4BB20206A44F400B25EFF /* radar */ = {
+			isa = PBXGroup;
+			children = (
+				9AD4BB21206A44F400B25EFF /* RadarDataExtract.swift */,
+				9AD4BB22206A44F400B25EFF /* RNRadarChartManagerBridge.m */,
+				9AD4BB23206A44F400B25EFF /* RNRadarChartView.swift */,
+				9AD4BB24206A44F400B25EFF /* RNRadarChartManager.swift */,
+			);
+			path = radar;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -636,9 +914,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BtslandTests" */;
 			buildPhases = (
+				A164ABDA2F5C37607B538148 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				51E4B1CA8B3DAF1C47297A79 /* [CP] Embed Pods Frameworks */,
+				96286C2566C18E162F923EEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -654,10 +935,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Btsland" */;
 			buildPhases = (
+				54870C38CE5B32FF3DC1FE37 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				A9991004F54F85649A1E8E51 /* [CP] Embed Pods Frameworks */,
+				5C06927FE81E829A68A4BA68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -672,10 +956,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Btsland-tvOS" */;
 			buildPhases = (
+				4232850A6591C0CCF5C47E64 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
 				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+				19333A5FF086A189962202C1 /* [CP] Embed Pods Frameworks */,
+				5702EC98A47904A129E0DFEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -690,9 +977,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Btsland-tvOSTests" */;
 			buildPhases = (
+				C31438FA477D8CB8A4F0265B /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				56168AFE3FDC171DCBA0D4F6 /* [CP] Embed Pods Frameworks */,
+				83E25CC1D8A55E13A1F89695 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1128,6 +1418,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		19333A5FF086A189962202C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland-tvOS/Pods-Btsland-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1141,6 +1446,188 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4232850A6591C0CCF5C47E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Btsland-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E4B1CA8B3DAF1C47297A79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BtslandTests/Pods-BtslandTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54870C38CE5B32FF3DC1FE37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Btsland-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56168AFE3FDC171DCBA0D4F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland-tvOSTests/Pods-Btsland-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5702EC98A47904A129E0DFEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland-tvOS/Pods-Btsland-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C06927FE81E829A68A4BA68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland/Pods-Btsland-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83E25CC1D8A55E13A1F89695 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland-tvOSTests/Pods-Btsland-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96286C2566C18E162F923EEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BtslandTests/Pods-BtslandTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A164ABDA2F5C37607B538148 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BtslandTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9991004F54F85649A1E8E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Btsland/Pods-Btsland-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Btsland/Pods-Btsland-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C31438FA477D8CB8A4F0265B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Btsland-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1157,8 +1644,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD4BB66206A44F400B25EFF /* ScatterDataExtract.swift in Sources */,
+				9AD4BB56206A44F400B25EFF /* LargeValueFormatter.swift in Sources */,
+				9AD4BB64206A44F400B25EFF /* RNScatterChartView.swift in Sources */,
+				9AD4BB51206A44F400B25EFF /* CombinedDataExtract.swift in Sources */,
+				9AD4BB7A206A44F400B25EFF /* RNRadarChartManager.swift in Sources */,
+				9AD4BB6F206A44F400B25EFF /* RNBarChartViewBase.swift in Sources */,
+				9AD4BB74206A44F400B25EFF /* RNBarChartView.swift in Sources */,
+				9AD4BB59206A44F400B25EFF /* BridgeUtils.swift in Sources */,
+				9AD4BB7B206A44F400B25EFF /* RNChartViewBase.swift in Sources */,
+				9AD4BB72206A44F400B25EFF /* RNBarChartManager.swift in Sources */,
+				9AD4BB54206A44F400B25EFF /* RNBarLineChartViewBase.swift in Sources */,
+				9AD4BB5A206A44F400B25EFF /* RNBubbleChartManager.swift in Sources */,
+				9AD4BB5C206A44F400B25EFF /* BubbleDataExtract.swift in Sources */,
+				9AD4BB5F206A44F400B25EFF /* RNPieChartView.swift in Sources */,
+				9AD4BB50206A44F400B25EFF /* RNCombinedChartManagerBridge.m in Sources */,
+				9AD4BB62206A44F400B25EFF /* RNPieChartManager.swift in Sources */,
+				9AD4BB5D206A44F400B25EFF /* RNBubbleChartManagerBridge.m in Sources */,
+				9AD4BB6D206A44F400B25EFF /* RNCandleStickChartManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				9AD4BB69206A44F400B25EFF /* RNLineChartManagerBridge.m in Sources */,
+				9AD4BB6E206A44F400B25EFF /* RNCandleStickChartManagerBridge.m in Sources */,
+				9AD4BB6B206A44F400B25EFF /* CandleDataExtract.swift in Sources */,
+				9AD4BB79206A44F400B25EFF /* RNRadarChartView.swift in Sources */,
+				9AD4BB77206A44F400B25EFF /* RadarDataExtract.swift in Sources */,
+				9AD4BB4F206A44F400B25EFF /* RNCombinedChartManager.swift in Sources */,
+				9AD4BB5E206A44F400B25EFF /* RNBarLineChartBaseManager.swift in Sources */,
+				9AD4BB6C206A44F400B25EFF /* RNCandleStickChartView.swift in Sources */,
+				9AD4BB61206A44F400B25EFF /* PieDataExtract.swift in Sources */,
+				9AD4BB58206A44F400B25EFF /* ChartDataSetConfigUtils.swift in Sources */,
+				9AD4BB78206A44F400B25EFF /* RNRadarChartManagerBridge.m in Sources */,
+				9AD4BB65206A44F400B25EFF /* RNScatterChartManagerBridge.m in Sources */,
+				9AD4BB55206A44F400B25EFF /* ChartDateFormatter.swift in Sources */,
+				9AD4BB57206A44F400B25EFF /* EntryToDictionaryUtils.swift in Sources */,
+				9AD4BB73206A44F400B25EFF /* RNBarChartManagerBridge.m in Sources */,
+				9AD4BB63206A44F400B25EFF /* RNScatterChartManager.swift in Sources */,
+				9AD4BB6A206A44F400B25EFF /* LineDataExtract.swift in Sources */,
+				9AD4BB67206A44F400B25EFF /* RNLineChartView.swift in Sources */,
+				9AD4BB5B206A44F400B25EFF /* RNBubbleChartView.swift in Sources */,
+				9AD4BB52206A44F400B25EFF /* RNYAxisChartViewBase.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				9AD4BB75206A44F400B25EFF /* RNHorizontalBarChartView.swift in Sources */,
+				9AD4BB68206A44F400B25EFF /* RNLineChartManager.swift in Sources */,
+				9AD4BB4E206A44F400B25EFF /* RNCombinedChartView.swift in Sources */,
+				9AD4BB53206A44F400B25EFF /* BalloonMarker.swift in Sources */,
+				9AD4BB76206A44F400B25EFF /* RNHorizontalBarChartManagerBridge.m in Sources */,
+				9AD4BB7C206A44F400B25EFF /* DataExtract.swift in Sources */,
+				9AD4BB60206A44F400B25EFF /* RNPieChartManagerBridge.m in Sources */,
+				9AD4BB71206A44F400B25EFF /* RNHorizontalBarChartManager.swift in Sources */,
+				9AD4BB70206A44F400B25EFF /* BarDataExtract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1209,7 +1743,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD426B5B1E1EE19DECBB4A0 /* Pods-BtslandTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1229,7 +1765,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5059D9D3C842881AA02F7742 /* Pods-BtslandTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = BtslandTests/Info.plist;
@@ -1246,6 +1784,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C17042C742ACA98CFC3F024 /* Pods-Btsland.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1258,12 +1797,14 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = Btsland;
+				SWIFT_OBJC_BRIDGING_HEADER = "Btsland-Bridging-Header.h";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F4766862AED841850B791B /* Pods-Btsland.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1275,12 +1816,14 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = Btsland;
+				SWIFT_OBJC_BRIDGING_HEADER = "Btsland-Bridging-Header.h";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732EB2D4C95A49C550A3CD08 /* Pods-Btsland-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1307,6 +1850,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A911BC6771ECE9025E5C84 /* Pods-Btsland-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1333,6 +1877,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B786D2AD42B47D07AB272FB1 /* Pods-Btsland-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1354,6 +1899,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2398BF9CFBFB4C3B38451E /* Pods-Btsland-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

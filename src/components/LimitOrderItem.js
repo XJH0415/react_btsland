@@ -156,12 +156,12 @@ export default class LimitOrderItem extends React.Component{
 
 const styles=StyleSheet.create({
     root:{
-        height:96,
+        height:100,
         paddingLeft:5,
         paddingRight:5
     },
     top:{
-        height:22,
+        height:26,
         flexDirection:'row',
     },
     topTitle1:{
@@ -176,18 +176,18 @@ const styles=StyleSheet.create({
 
     },
     topTitleType:{
-        lineHeight:22,
-        fontSize:16,
+        lineHeight:26,
+        fontSize:14,
         color:DefaultConfig.red,
         fontWeight:'bold'
     },
     topTitleText:{
-        lineHeight:22,
+        lineHeight:26,
         color:'gray',
         fontSize:12
     },
     topTitleTextNum:{
-        lineHeight:22,
+        lineHeight:26,
         fontSize:12,
         fontWeight:'bold',
         color:DefaultConfig.red,
@@ -209,12 +209,12 @@ const styles=StyleSheet.create({
         flexDirection:'row',
     },
     centerTab:{
-        fontSize:13,
+        fontSize:12,
         lineHeight:20,
         color:'gray'
     },
     centerTabNum:{
-        fontSize:13,
+        fontSize:12,
         lineHeight:20,
     },
     centerRight:{
@@ -237,7 +237,6 @@ const styles=StyleSheet.create({
         flexDirection:'row',
         height:4,
         borderRadius:5,
-        backgroundColor:'#D3D3D3',
         marginTop:5,
         marginBottom:5
     },

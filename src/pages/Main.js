@@ -7,12 +7,6 @@ import {
     StyleSheet
 } from 'react-native';
 import Header from "../components/Header";
-import MyAssetItem from '../components/MyAssetItem'
-import Tab from "../components/Tab";
-import FillOrderItem from "../components/FillOrderItem";
-import Photo from "../components/Photo";
-import LimitOrderItem from "../components/LimitOrderItem";
-import {PrivateKey} from 'bitsharesjs/es'
 class Main extends React.Component{
     static navigationOptions = {
         title:'资讯'

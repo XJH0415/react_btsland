@@ -29,9 +29,7 @@ export default class Application{
         Application.account='xjh1009';
         Application.getFullAccount(Application.account);
         setInterval(()=>{Application.getFullAccount(Application.account)},10000);
-        BitsharesUtil.history_api('get_full_accounts', ['1.2.462840','1.11.1',100,'1.11.0'],(history) => {
-            alert(JSON.stringify(history))
-        })
+
         // Application.get_fill_order_history();
 
         var date=new Date();

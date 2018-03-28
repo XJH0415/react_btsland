@@ -51,6 +51,17 @@ export default class OrderItem extends React.Component{
         }
 
     }
+
+    /**
+     * 当props发生变化时
+     * @param nextProps 变化后的props
+     */
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            maxWidth:nextProps.maxWidth,
+            maxNum:nextProps.maxNum
+        })
+    }
 }
 
 const styles=StyleSheet.create({

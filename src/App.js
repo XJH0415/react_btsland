@@ -20,6 +20,7 @@ import U2U from "./pages/U2U";
 import Trade from "./pages/Trade";
 import AccountInfo from './pages/AccountInfo';
 import MyAssets from './pages/MyAssets';
+import LimitOrders from "./pages/LimitOrders";
 
 const MainTab = TabNavigator({
     //图标地址
@@ -88,7 +89,8 @@ const MyStack = StackNavigator({
     Tab: {screen: MainTab},
     Market: {screen: Market},
     AccountInfo:{screen:AccountInfo},
-    MyAssets:{screen:MyAssets}
+    MyAssets:{screen:MyAssets},
+    LimitOrders:{screen:LimitOrders}
 },
 {
     headerMode:'none'

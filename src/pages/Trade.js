@@ -258,10 +258,7 @@ class Trade extends React.Component{
                                                   if(!item.op.is_maker){
                                                       type='maker'
                                                   }
-                                                  var dateTime=Date.parse(new Date(item.time));
-                                                  var newDate = new Date();
-                                                  newDate.setTime(dateTime);
-                                                  var time=newDate.format('MM-dd hh:mm');
+                                                  var time = MyUtil.TtimeToMyTime(item.time);
                                                   return (<FillOrderItem price={price} quote={quoteNum} base={baseNum} time={time} type={type}/>)
                                               }else {
                                                   return null

@@ -7,6 +7,7 @@ import {
     StyleSheet
 } from 'react-native';
 import Header from "../components/Header";
+import {CandleStickChart} from 'react-native-charts-wrapper';
 class Main extends React.Component{
     static navigationOptions = {
         title:'资讯'
@@ -19,7 +20,7 @@ class Main extends React.Component{
         const { navigate } = this.props.navigation;
         var {title}=this.props;
         return (
-            <View>
+            <View style={styles.root}>
                 <Header rightType={'none'} title={title} leftType={'share'}/>
                 {/*<WebView*/}
                 {/*source={{uri:'https://changjinglu.info/'}}*/}
@@ -31,7 +32,10 @@ class Main extends React.Component{
     }
 }
 const styles=StyleSheet.create({
-    webView:{
+    root:{
+        flex:1
+    },
+    chart:{
         flex:1
     }
 })

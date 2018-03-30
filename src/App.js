@@ -21,6 +21,7 @@ import Trade from "./pages/Trade";
 import AccountInfo from './pages/AccountInfo';
 import MyAssets from './pages/MyAssets';
 import LimitOrders from "./pages/LimitOrders";
+import DetailMarker from "./pages/DetailMarker";
 
 const MainTab = TabNavigator({
     //图标地址
@@ -90,7 +91,8 @@ const MyStack = StackNavigator({
     Market: {screen: Market},
     AccountInfo:{screen:AccountInfo},
     MyAssets:{screen:MyAssets},
-    LimitOrders:{screen:LimitOrders}
+    LimitOrders:{screen:LimitOrders},
+    DetailMarker:{screen:DetailMarker}
 },
 {
     headerMode:'none'

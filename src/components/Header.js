@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import MarketTab from '../components/MarketTab'
 import AssetTab from "./AssetTab";
+import DetailMarker from "../pages/DetailMarker";
 
 export default class Header extends React.Component{
     static defaultProps={
@@ -34,10 +35,12 @@ export default class Header extends React.Component{
         this.setState({bottomVisible:false})
     }
     marketOnPress=(base,quote)=>{
-        alert(quote+'/'+base);
+      if(this.props.navigation){
+        this.props.navigation.navigate('DetailMarker')
+      }
     }
     searchOnPress=()=>{
-        alert('搜索');
+
     }
     shareOnPress=()=>{
         Share.share({

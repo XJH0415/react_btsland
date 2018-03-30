@@ -7,6 +7,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "immutability-helper": "2.4.0",
+    "lodash": "4.17.4",
     "bitsharesjs": "^1.5.6",
     "js-sha256": "0.2.3",
     "react": "^16.3.0-alpha.1",

@@ -29,7 +29,6 @@ export default class Application{
         Application.account='xjh1009';
         Application.getFullAccount(Application.account);
         setInterval(()=>{Application.getFullAccount(Application.account)},10000);
-
         // Application.get_fill_order_history();
 
         var date=new Date();
@@ -93,22 +92,15 @@ export default class Application{
 
     static get_market_history(){
         Apis.instance(DefaultConfig.server, true).init_promise.then((res) => {
-            // Apis.instance().db_api().exec('get_margin_positions', [name]).then((objects) => {
-            //     alert(JSON.stringify(objects))
-            // });
-            let bucketCount=10;
+            let bucketCount=20;
             let bucketSize=5*60;
             let startDate = new Date();
             let endDate = new Date();
-            let startDateShort = new Date();
             startDate = new Date(
                 startDate.getTime() -
                 bucketSize * bucketCount * 1000
             );
             endDate.setDate(endDate.getDate() + 1);
-            startDateShort = new Date(
-                startDateShort.getTime() - 3600 * 50 * 1000
-            );
             Apis.instance().history_api().exec('get_market_history',[
                 '1.3.113',
                 '1.3.0',

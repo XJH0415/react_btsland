@@ -36,7 +36,7 @@ export default class Header extends React.Component{
     }
     marketOnPress=(base,quote)=>{
       if(this.props.navigation){
-        this.props.navigation.navigate('DetailMarker')
+        this.props.navigation.navigate('DetailMarker',{base:base,quote:quote})
       }
     }
     searchOnPress=()=>{

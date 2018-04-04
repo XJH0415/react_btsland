@@ -7,7 +7,7 @@ import {
     StyleSheet
 } from 'react-native';
 import Header from "../components/Header";
-import {CandleStickChart} from 'react-native-charts-wrapper';
+import {PublicKey} from 'bitsharesjs/es'
 class Main extends React.Component{
     static navigationOptions = {
         title:'资讯'
@@ -22,10 +22,6 @@ class Main extends React.Component{
         return (
             <View style={styles.root}>
                 <Header rightType={'none'} title={title} leftType={'share'}/>
-                {/*<WebView*/}
-                {/*source={{uri:'https://changjinglu.info/'}}*/}
-                {/*style={styles.webView}*/}
-                {/*/>*/}
             </View>
 
         );
